@@ -1,0 +1,159 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MLS Global</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="javascripts/simpleCart_uncompressed.js" type="text/javascript" charset="utf-8"></script>
+  
+    <!--Make a new cart instance with your paypal login email-->
+    <script type="text/javascript">
+      simpleCart = new cart("m87.bolivar@gmail.com");
+    </script>
+
+    <style type="text/css">
+    .itemImage{ display: none; } 
+    .itemName{ display: inline-block; width: 20%;} 
+    .itemPrice{ display: inline-block; width: 20%;} 
+    .itemOptions{ display: none; } 
+    .itemQuantity{ display: inline-block; width: 20%;} 
+    .itemTotal{ display: inline-block; width: 20%;} 
+
+    .itemContainer{ display: inline-block; width: 100%;}
+    .totalItems{ display: inline-block; margin-left: 40%; width: 20%;}
+    .totalPrice{ display: inline-block; width: 20%;}
+    </style>
+
+  </head>
+  <body>
+
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="row">
+
+          <div class="col-xs-12 col-md-8">
+              <h2> <img src="./images/mlsworld.png" width="60"> Multilisting Service Global</h2>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+              <h3 class="text-right">v</h3>
+              <a href="/index.php?action=logout"><p class="text-right">Logout</p></a>
+
+        </div>
+      </div></div></nav>
+
+
+    
+      <div class="container" id="content">
+
+        <ul class="nav nav-pills">
+          <li><a href="#">Home</a></li>
+          <li><a href="./index.html">Subscription</a></li>
+          <li><a href="./store.html">Store</a></li>
+          <li class="active"><a href="#">My Bundles</a></li>
+        </ul>
+
+    
+
+
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+                <h2> <span class="glyphicon glyphicon-list "></span>&nbsp;My Plans</h2>
+            </div>
+
+            <div class="col-xs-12 col-md-12">
+
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th class="text-center">Added</th>
+                        <th class="text-center">Expire</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Time</th>
+                        <th class="text-center">Listings</th>
+                        <th class="text-center">Featured</th>
+                        <th class="text-center">Images</th>
+                        <th class="text-center">Files</th>
+                        <th class="text-center">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td>1</td>
+                        <td>Silver</td>
+                        <td>Basic plan. Is the better option for sell your property.</td>
+                        <td class="text-center">2014-10-08 21:01:42</td>
+                        <td class="text-center">2014-11-07 21:01:42</td>
+                        <td class="text-center">899.5 USD</td>
+                        <td class="text-center">
+                                                            1 Months
+                                                                                                            </td>                        
+                        <td class="text-center">1</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">12</td>
+                        <td class="text-center">1</td>
+                        <td><a href="./cancelBundle.html?bundle_id=3" class="btn btn-danger">Unsubscribe</a></td>
+                    </tr>
+                                    <tr>
+                        <td>2</td>
+                        <td>Gold</td>
+                        <td>This plan is if you want sell various properties, this is your plan.</td>
+                        <td class="text-center">2014-10-08 21:01:42</td>
+                        <td class="text-center">2014-11-07 21:01:42</td>
+                        <td class="text-center">1299.5 USD</td>
+                        <td class="text-center">
+                                                            1 Months
+                                                                                                            </td>                        
+                        <td class="text-center">10</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">12</td>
+                        <td class="text-center">1</td>
+                        <td><a href="./cancelBundle.html?bundle_id=4" class="btn btn-danger">Unsubscribe</a></td>
+                    </tr>
+                                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="info text-center">&nbsp;</td>
+                        <td class="info text-center">Total</td>
+                        <td class="info text-center">11</td>
+                        <td class="info text-center">1</td>
+                        <td class="info text-center">24</td>
+                        <td class="info text-center">2</td>
+                        <th class="info text-center">&nbsp;</th>
+                    </tr>
+                </tfoot>
+                </table>
+            </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  
+</body></html>

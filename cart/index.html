@@ -1,0 +1,117 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MLS Global</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="javascripts/simpleCart_uncompressed.js" type="text/javascript" charset="utf-8"></script>
+  
+    <!--Make a new cart instance with your paypal login email-->
+    <script type="text/javascript">
+      simpleCart = new cart("mls");
+    </script>
+
+  </head>
+  <body>
+
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="row">
+
+          <div class="col-xs-12 col-md-8">
+              <h2> <img src="./images/mlsworld.png" width="60"> Multilisting Service Global</h2>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+              <h3 class="text-right">v</h3>
+              <a href="/index.php?action=logout"><p class="text-right">Logout</p></a>
+
+        </div>
+      </div></div></nav>
+
+
+    
+      <div class="container" id="content">
+
+        <ul class="nav nav-pills">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Subscription</a></li>
+          <li><a href="./store.html">Store</a></li>
+        </ul>
+
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+            <div class="col-xs-10 col-md-10">
+                <div></div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <h1>Status</h1>
+
+                    <p>Your have 2 bundles.</p>
+                    <p><a href="./myBundles.html">View my bundles</a></p>
+                <a href="./store.html">Go to store</a>
+            </div>
+
+      </div>
+
+      <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+                <h1>Payment method</h1>
+                <p>Configure your credit card.</p>
+                <p><a href="payment_method.html">View your current payment method</a></p>
+                <p><a href="payment.html">Update your payment method</a></p>
+            </div>
+
+      </div>
+
+      <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+                <h1>View receipts</h1>
+                <p>Click below to view the receipts for your payments</p>
+                <a href="receipts.html">View receipts</a>
+            </div>
+
+      </div>
+
+
+      <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+                <h1>Cancel your subscription</h1>
+                <a href="./cancelList.html">View your options</a>
+            </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <button type="button" class="btn btn-default simpleCart_empty" style="display:none;"></button>
+    <script>
+        if (typeof(clear) != 'undefined')
+        {
+            $( document ).ready(function() {
+                setTimeout(function(){$('.simpleCart_empty').each(function(){$(this).click()});}, 300);
+            });
+        }
+    </script>
+  
+</body></html>
